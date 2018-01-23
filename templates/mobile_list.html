@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Nearby Pokémon</title>
+	<title>Nearby Monsters</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/mobile.min.css').lstrip('/') }}" type="text/css" />
 	<!-- Custom CSS code-->
@@ -9,7 +9,7 @@
 		{% endif %}
 </head>
 <body class="mobilePage">
-	<h1>Nearby Pokémon</h1>
+	<h1>Nearby Monsters</h1>
 
 	<ol>
 {% for pokemon in pokemon_list[:20] %}

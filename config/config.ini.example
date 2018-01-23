@@ -69,7 +69,7 @@
 #################
 
 #china                          # Coordinates transformer for China.
-#no-jitter                      # Don't apply random -9m to +9m jitter to location.
+#jitter                         # Don't apply random -9m to +9m jitter to location.
 #altitude:                      # Default altitude in meters. Retrieve this value regarding your scan location from the web. (default=507)
 #altitude-variance:             # Variance for --altitude in meters (default=1)
 #use-altitude-cache             # Query the Elevation API for each step, rather than only once, and store results in the database.
@@ -108,7 +108,7 @@
 #high-lvl-accounts:             # File containing a list high level accounts, in the format "auth_service,username,password"
 #enc-whitelist-file:            # File containing a list of Pokemon IDs to encounter for IV/CPs. Requires L30 or higher accounts in --high-lvl-accounts.
 #hlvl-kph:                      # Set a maximum speed in km/hour for high level account scanning. (default=25)
-
+#pgscout_url:                   # Set your url here for PGScout
 
 # Webserver settings
 ####################

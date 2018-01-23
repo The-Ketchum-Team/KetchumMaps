@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-Fake RocketMap API
+Fake KetchumMaps API
 
 This is a simplistic flask app to emulate what a pokemon go api returns.
 

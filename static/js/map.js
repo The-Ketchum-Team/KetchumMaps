@@ -190,9 +190,9 @@ function initMap() { // eslint-disable-line no-unused-vars
         zoom: Number(getParameterByName('zoom')) || Store.get('zoomLevel'),
         gestureHandling: 'greedy',
         fullscreenControl: true,
-        streetViewControl: false,
-        mapTypeControl: false,
-        clickableIcons: false,
+        streetViewControl: true,
+        mapTypeControl: true,
+        clickableIcons: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
             position: google.maps.ControlPosition.RIGHT_TOP,
@@ -240,7 +240,7 @@ function initMap() { // eslint-disable-line no-unused-vars
     map.mapTypes.set('style_light2', styleLight2)
 
     var stylePgo = new google.maps.StyledMapType(pGoStyle, {
-        name: 'RocketMap'
+        name: 'KetchumMaps'
     })
     map.mapTypes.set('style_pgo', stylePgo)
 
@@ -255,17 +255,17 @@ function initMap() { // eslint-disable-line no-unused-vars
     map.mapTypes.set('style_light2_nl', styleLight2Nl)
 
     var stylePgoNl = new google.maps.StyledMapType(pGoStyleNoLabels, {
-        name: 'RocketMap (No Labels)'
+        name: 'KetchumMaps (No Labels)'
     })
     map.mapTypes.set('style_pgo_nl', stylePgoNl)
 
     var stylePgoDay = new google.maps.StyledMapType(pGoStyleDay, {
-        name: 'RocketMap Day'
+        name: 'KetchumMaps Day'
     })
     map.mapTypes.set('style_pgo_day', stylePgoDay)
 
     var stylePgoNight = new google.maps.StyledMapType(pGoStyleNight, {
-        name: 'RocketMap Night'
+        name: 'KetchumMaps Night'
     })
     map.mapTypes.set('style_pgo_night', stylePgoNight)
 

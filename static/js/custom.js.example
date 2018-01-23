@@ -33,10 +33,10 @@ $(function () {
     ]
 
     // Clustering! Different zoom levels for desktop vs mobile.
-    const disableClusters = false // Default: false
+    const disableClusters = true // Default: false
     const maxClusterZoomLevel = 14 // Default: 14
     const maxClusterZoomLevelMobile = 14 // Default: same as desktop
-    const clusterZoomOnClick = false // Default: false
+    const clusterZoomOnClick = true // Default: false
     const clusterZoomOnClickMobile = false // Default: same as desktop
     const clusterGridSize = 60 // Default: 60
     const clusterGridSizeMobile = 60 // Default: same as desktop
@@ -49,7 +49,7 @@ $(function () {
     /* Feature detection. */
 
     const hasStorage = (function () {
-        var mod = 'RocketMap'
+        var mod = 'KetchumMaps'
         try {
             localStorage.setItem(mod, mod)
             localStorage.removeItem(mod)

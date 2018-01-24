@@ -13,15 +13,15 @@
 #auth-service:                  # ptc (default) or google
 #username:                      # Usernames, one per account. (default=[])
 #password:                      # Passwords, either single one for all accounts or one per account. (default=[])
-#hash-key:                      # Key for hash server (default=None)
+#hash-key:                      # Bossland Hash Key (default=None)
 
 
 # Common settings
 #################
 
-#host:                          # Address to listen on (default='127.0.0.1')
-#port:                          # Port to listen on (default=5000)
-#accountcsv:                    # Load accounts instead from a CSV file containing "auth-service,username,password" lines.
+#host:                          # Address to listen to 0.0.0.0 (default='127.0.0.1')
+#port:                          # Port to listen to is 80 (default=5000)
+#accountcsv:                    # (Recommended) Load accounts instead from a CSV file containing "auth-service,username,password" lines.
 #speed-scan                     # Use speed-scan as the search scheduler.
 #location:                      # Location, can be an address or coordinates.
 #step-limit:                    # Steps (default=10)

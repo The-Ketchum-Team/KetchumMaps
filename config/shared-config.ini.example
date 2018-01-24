@@ -9,13 +9,11 @@
 
 #gmaps-key:                     # Your Google Maps API key
 #captcha-key:                   # 2Captcha API key.
-#hash-key:                      # Key for hash server (default=None)
+#hash-key:                      # Bossland Hash Key(default=None)
 
 # Other shared settings 
 ###################
 
-#db-type:                       # sqlite (default) or mysql
-#db:                            # Database filename for SQLite. (default='pogom.db')
 #db-host:                       # Required for mysql ()
 #db-name:                       # Required for mysql
 #db-user:                       # Required for mysql

@@ -13,14 +13,14 @@
 #auth-service:                  # ptc (default) or google
 #username:                      # Usernames, one per account. (default=[])
 #password:                      # Passwords, either single one for all accounts or one per account. (default=[])
-#hash-key:                      # Key for hash server (default=None)
+#hash-key:                      # Bossland Hash Key (default=None)
 
 
 # Common settings
 #################
 
-#host:                          # Address to listen on (default='127.0.0.1')
-#port:                          # Port to listen on (default=5000)
+#host:                          # Address to listen on 0.0.0.0 (default='127.0.0.1')
+#port:                          # Port to listen on port 80 (default=5000)
 #accountcsv:                    # Load accounts instead from a CSV file containing "auth-service,username,password" lines.
 #speed-scan                     # Use speed-scan as the search scheduler.
 #location:                      # Location, can be an address or coordinates.
@@ -82,7 +82,7 @@
 #skip-empty                     # Enables skipping of empty cells in normal scans - requires previously populated database. (not to be used with -ss)
 #min-seconds-left:              # Time that must be left on a spawn before considering it too late and skipping it. (default=0)
 #gym-info                       # Enables detailed gym info collection. (default=False)
-#pokestop-spinning              # Spin Pokestops with "50%" Chance (default=False)
+#pokestop-spinning              # Spin Pokestops with "50%" Chance to avoid captchas (default=False)
 #account-max-spins:             # Maximum number of Pokestop spins per hour (default=20)
 #on-demand_timeout:             # Pause searching while web UI is inactive for this timeout (in seconds). (default=0)
 
